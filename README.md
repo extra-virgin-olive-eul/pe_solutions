@@ -6,13 +6,9 @@
 
 
 * Clone this repo
-
 * Add your solution:
-
 	* If there's a pre-existing directory, put your solution in there and push to master
-
 	* No one submitted a solution for that one yet? Create a directory, add solution, push to master
-
 * Is one of your solutions in a language that hasn't been represented here yet? Add it to the LANGUAGES list in README
 
 
