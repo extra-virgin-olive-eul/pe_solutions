@@ -20,6 +20,7 @@ LANGUAGES
 
 * Python 2/3
 * Clojure
+* Rust
 
 NOTES
 =====
