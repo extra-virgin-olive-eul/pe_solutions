@@ -2,3 +2,4 @@
 .ropeproject
 .ropeproject/
 __pycache__/
+*.out
