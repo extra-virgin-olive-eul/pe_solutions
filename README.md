@@ -7,7 +7,7 @@
 
 * Clone this repo
 * Add your solution:
-	* If there's a pre-existing directory, put your solution in there and push to master
+	* If there's a pre-existing directory, put your solution in there and push to master [1]
 	* No one submitted a solution for that one yet? Create a directory, add solution, push to master
 * Is one of your solutions in a language that hasn't been represented here yet? Add it to the LANGUAGES list in README
 
@@ -20,3 +20,7 @@ LANGUAGES
 
 * Python 2/3
 * Clojure
+
+NOTES
+=====
+[1] Yes, this is not an ideal workflow. However, it might work okay with a small # of folks initially. I'll also gladly accept PRs!
