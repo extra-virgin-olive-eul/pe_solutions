@@ -6,7 +6,7 @@ This works but is fairly slow:
 
     real    0m46.972s
     user    0m44.964s
-    sys 0m2.000s
+    sys     0m2.000s
 
 I really ought to investigate less naive ways of determining primality.
 """
