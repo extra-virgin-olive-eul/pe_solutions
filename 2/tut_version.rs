@@ -24,34 +24,16 @@ fn fibonacci() -> Fibonacci {
 }
 
 fn main() {
-    let mut sequence = 0..3;
+    let mut sum = 0;
 
-    println!("Four consecitive `next` calls on 0..3");
-    println!("> {:?}", sequence.next());
-    println!("> {:?}", sequence.next());
-    println!("> {:?}", sequence.next());
-    println!("> {:?}", sequence.next());
-
-    println!("Iterate through 0..3 using `for`");
-    for i in 0..3 {
-        println!("> {}", i);
+    for i in fibonacci() {
+        if i % 2 == 0 {
+            sum = sum + i;
+        }
+        if i > 4000000 {
+            break;
+        }
     }
-
-    println!("The first four terms of the Fibonacci sequence are: ");
-    for i in fibonacci().take(4) {
-        println!("> {}", i);
-    }
-
-    println!("The next four terms of the Fibonacci sequnce are: ");
-    for i in fibonacci().skip(4).take(4) {
-        println!("> {}", i);
-    }
-
-    let array = [1u32, 3, 3, 7];
-
-    println!("Iterate the following array {:?}", &array);
-    for i in array.iter() {
-        println!("> {}", i);
-    }
+    println!("The sum is: {}", sum);
 }
 
