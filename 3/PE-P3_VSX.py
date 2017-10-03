@@ -105,3 +105,5 @@ input_int = all_args.input
 # Run tests
 print('All factors of {}: {}.'.format(input_int, find_factors(input_int)))
 print('Largest prime factor of {} is {}.'.format(input_int, find_largest_pf(input_int)))
+
+# vim: tabstop=4 expandtab shiftwidth=4 softtabstop=4

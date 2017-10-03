@@ -56,3 +56,5 @@ input_digits = all_args.numdigits
 prod_1, prod_2, prod_product = find_largest_palindrome(input_digits)
 print('Largest palindrome product of two {}-digit integers is {}, provided by '
         '{} x {}.'.format(input_digits, prod_product, prod_1, prod_2))
+
+# vim: tabstop=4 expandtab shiftwidth=4 softtabstop=4
