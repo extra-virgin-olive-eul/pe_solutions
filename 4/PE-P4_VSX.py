@@ -11,9 +11,6 @@ Project Euler Problem 4:
 
     Find the largest palindrome made from the product of two 3-digit numbers.
 
-FWIW, this code performs decently well up to 14-digit inputs on a 2016 MacBook Pro
-(Core i7, 16 GB RAM). At 15 digits it starts to sweat a bit.
-
 '''
 
 import argparse
@@ -29,12 +26,19 @@ def is_palindrome(candidate):
 
 def find_largest_palindrome(num_digits):
     """ Finds the largest palindrome from two numbers of length num_digits """
+    largest_palindrome = 0
     start_num = 10 ** num_digits - 1
-    for factor_1 in range(start_num, 1, -1):
-        for factor_2 in range(start_num, 1, -1):
+    end_num = 10 ** (num_digits - 1) - 1
+    for factor_1 in range(start_num, end_num, -1):
+        for factor_2 in range(start_num, end_num, -1):
             producto = factor_1 * factor_2     # "product" not a reserved word?
             if is_palindrome(producto):
-                return factor_1, factor_2, producto
+                if producto > largest_palindrome:
+                    largest_palindrome = producto
+                    largest_f1 = factor_1
+                    largest_f2 = factor_2
+    
+    return largest_f1, largest_f2, largest_palindrome
 
 
 
@@ -51,4 +55,4 @@ input_digits = all_args.numdigits
 # Perform the check
 prod_1, prod_2, prod_product = find_largest_palindrome(input_digits)
 print('Largest palindrome product of two {}-digit integers is {}, provided by '
-    '{} x {}.'.format(input_digits, prod_product, prod_1, prod_2))
+        '{} x {}.'.format(input_digits, prod_product, prod_1, prod_2))
