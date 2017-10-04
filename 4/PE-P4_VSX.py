@@ -29,9 +29,14 @@ def find_largest_palindrome(num_digits):
     largest_palindrome = 0
     start_num = 10 ** num_digits - 1
     end_num = 10 ** (num_digits - 1) - 1
+
     for factor_1 in range(start_num, end_num, -1):
         for factor_2 in range(start_num, end_num, -1):
+            if factor_1 < factor_2:
+                continue
+
             producto = factor_1 * factor_2     # "product" not a reserved word?
+
             if is_palindrome(producto):
                 if producto > largest_palindrome:
                     largest_palindrome = producto
