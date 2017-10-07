@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 '''
-Program:     PE-P6_VSX.py
+Program:     PE-P7_VSX.py
 Author:      vsx-gh (https://github.com/vsx-gh)
 Created:     20171004
 
