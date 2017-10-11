@@ -23,6 +23,7 @@ LANGUAGES
 * Rust
 * gForth
 * SAS 9.4
+* Scratch
 
 NOTES
 =====
