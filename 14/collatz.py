@@ -31,8 +31,11 @@ def collatz_seq(n):
 generates_longest_seq = 0
 max_seq_len = 0
 
+
 for i in [n for n in range(2, 1000000) if n % 2 != 0]:
     new_seq_len = len(collatz_seq(i))
     if new_seq_len > max_seq_len:
         generates_longest_seq = i
         max_seq_len = new_seq_len
+
+print(generates_longest_seq, max_seq_len)
