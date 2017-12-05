@@ -7,7 +7,7 @@ For each int in range (1-1000), add an entry to word_rep if one
 does not already exist.
 
 Once that dict is built, sum the lengths of all the ints (as words),
-but totalling all values in the word_rep dict (using letter_count to
+by totalling all values in the word_rep dict (using letter_count to
 strip hyphens and spaces).
 """
 
