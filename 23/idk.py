@@ -6,12 +6,12 @@ joe@nor:~/pe_solutions/23$ (master) time python3 idk.py
 
 real    0m54.164s
 user    0m53.312s
-sys 0m0.808s
+sys     0m0.808s
 
 1.) Find all the abundant nums (under 28123) in `abundant_nums`
 2.) Calculate all possible abundant sums in `abundant_sums`
 3.) Collect all N in 1-28123 *not* in ab_sums
-3.) Sums all ints found in step 3
+4.) Sums all ints found in step 3
 
 """
 def factors(n):
