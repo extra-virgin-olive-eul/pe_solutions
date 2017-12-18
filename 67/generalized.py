@@ -55,7 +55,7 @@ ALGORITHM:
 
     After the max path has been computed, I can retrace its steps by starting at the root
     of the tree and, at each successive level, choosing the 'value' with the highest accompanying
-    'running' value.
+    'running_total' value.
 
     Note:
     ----
