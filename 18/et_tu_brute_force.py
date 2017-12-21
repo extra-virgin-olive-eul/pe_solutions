@@ -100,6 +100,13 @@ if __name__ == '__main__':
             help="Path to text file containing numeric triangle (optional)."
     )
 
+    parser.add_argument('-d', '--diagnostic',
+            required=False,
+            default=False,
+            action="store_true",
+            help="Toggle diagnostic mode. This will craft a dataset about the paths and path sums."
+    )
+
     args = parser.parse_args()
 
     if not args.file:
@@ -111,3 +118,14 @@ if __name__ == '__main__':
 
     all_possible_path_sums = [sum(path_through_tree(tree, seq)) for seq in generate_possible_paths(tree)]
     print(max(all_possible_path_sums))
+
+    if args.diagnostic:
+        from IPython import embed
+        import pandas as pd
+
+        df_dict = {'PATH_STR': [seq for seq in generate_possible_paths(tree)],
+                   'SEQUENCE': [path_through_tree(tree, seq) for seq in generate_possible_paths(tree)],
+                   'SUM': [sum(path_through_tree(tree, seq)) for seq in generate_possible_paths(tree)]}
+
+        df = pd.DataFrame(df_dict)
+        embed()
