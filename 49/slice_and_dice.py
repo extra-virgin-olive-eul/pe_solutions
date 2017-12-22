@@ -3,14 +3,14 @@ from itertools import combinations
 from math import sqrt
 
 """
-Took a weird kind of informed brute search here.
+Took a weird kind of informed brute search approach here.
 
 I knew the answer had to involve four-digit primes, so I generated a
 list of those in the first step of `__main__`.
 
 I also knew the answer had to consist of three numbers that were permutations
 of one another (anagrams, lexically speaking). I took my list of four digit
-primes, and calculated a crude hash value for each.
+primes, and calculated a crude hash value for each (`build_primes_hash_table()`).
 
 I then used that list of keys to build an inverted index so I could get all the
 possible permutations.
