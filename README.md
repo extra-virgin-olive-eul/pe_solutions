@@ -24,6 +24,7 @@ LANGUAGES
 * gForth/[mjForth](https://github.com/joedougherty/mjForth)
 * SAS 9.4
 * Scratch
+* T-SQL
 
 NOTES
 =====
