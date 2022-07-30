@@ -34,7 +34,7 @@ def find_factorial_recursive(fac_input):
     while fac_input > 1:
         fac_output *= fac_input
         fac_input -= 1
-        find_factorial(fac_input)
+        find_factorial_recursive(fac_input)
 
     return fac_output
 
