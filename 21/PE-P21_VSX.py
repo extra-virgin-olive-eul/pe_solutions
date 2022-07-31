@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 
 '''
-Program:     PE-P20_VSX.py
+Program:     PE-P21_VSX.py
 Author:      vsx-gh (https://github.com/vsx-gh)
 Created:     20220718
 
-Project Euler Problem 20:
+Project Euler Problem 21:
     Let d(n) be defined as the sum of proper divisors of n (numbers less than n which
     divide evenly into n).
     If d(a) = b and d(b) = a, where a ≠ b, then a and b are an amicable pair and each
